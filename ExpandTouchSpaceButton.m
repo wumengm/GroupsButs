@@ -16,10 +16,10 @@
 - (CGRect)realTouchBouns {
     
     self.expandEdgeInsets = UIEdgeInsetsMake(-10, -10, -10, -10);
-    return CGRectMake(_expandEdgeInsets.left,
+    return CGRectMake(_expandEdgeInsets.,
                       _expandEdgeInsets.top,
-                      self.width - _expandEdgeInsets.left - _expandEdgeInsets.right,
-                      self.height - _expandEdgeInsets.top - _expandEdgeInsets.bottom);
+                      self.frame.size.width - _expandEdgeInsets.left - _expandEdgeInsets.right,
+                      self.frame.size.height - _expandEdgeInsets.top - _expandEdgeInsets.bottom);
 }
 
 - (BOOL)isExclusiveTouch {
