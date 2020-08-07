@@ -16,7 +16,7 @@
 - (CGRect)realTouchBouns {
     
     self.expandEdgeInsets = UIEdgeInsetsMake(-10, -10, -10, -10);
-    return CGRectMake(_expandEdgeInsets.,
+    return CGRectMake(_expandEdgeInsets.left,
                       _expandEdgeInsets.top,
                       self.frame.size.width - _expandEdgeInsets.left - _expandEdgeInsets.right,
                       self.frame.size.height - _expandEdgeInsets.top - _expandEdgeInsets.bottom);
